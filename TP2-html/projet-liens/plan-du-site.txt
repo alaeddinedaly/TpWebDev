@@ -1,0 +1,33 @@
+Arborescence CIBLE du projet (ne pas modifier les noms de dossiers/fichiers) :
+
+projet-liens/
+├── index.html
+├── plan-du-site.txt
+├── pages/
+│   ├── a-propos.html
+│   └── contact/
+│       └── contact.html
+├── docs/
+│   └── mentions-legales.html
+└── assets/
+    ├── css/
+    │   ├── style.css
+    │   └── themes/
+    │       └── dark.css
+    ├── js/
+    │   ├── main.js
+    │   └── modules/
+    │       └── menu.js
+    └── images/
+        ├── logo.png
+        ├── icons/
+        │   ├── home.svg
+        │   └── mail.svg
+        ├── team/
+        │   ├── alice.jpg
+        │   └── bob.jpg
+        └── backgrounds/
+            └── hero-bg.jpg
+
+Rappel : tous les noms de fichiers et de dossiers ci-dessus sont EXACTS
+(respecter la casse - majuscules/minuscules - et les extensions).

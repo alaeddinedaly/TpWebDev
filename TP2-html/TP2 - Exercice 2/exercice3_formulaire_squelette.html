@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 3 - Formulaire d'inscription</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 480px; margin: 40px auto; }
+    label { display: block; margin-top: 12px; font-weight: 600; }
+    input, select { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; }
+    input:invalid { border-color: #cc0000; }
+    input:valid { border-color: #2e7d32; }
+    button { margin-top: 20px; padding: 10px 16px; }
+  </style>
+</head>
+<body>
+  <h1>Inscription</h1>
+
+  <!--
+    OBJECTIF DE L'EXERCICE :
+    Compléter ce formulaire pour qu'il soit validé ENTIEREMENT par le navigateur,
+    sans JavaScript pour la validation elle-même :
+
+    1. Nom d'utilisateur : requis, 3 à 16 caractères, lettres/chiffres/underscore uniquement
+       -> utiliser "pattern" et "title" pour le message d'aide
+    2. Email : requis, type email natif
+    3. Mot de passe : requis, minimum 8 caractères, au moins une majuscule et un chiffre
+       -> pattern à construire avec une regex
+    4. Date de naissance : requis, l'utilisateur doit avoir au moins 16 ans
+       -> type="date" + attribut "max" calculé
+    5. Pays : à choisir dans une liste avec autocomplétion -> utiliser <datalist>
+    6. Ajouter un bouton de soumission qui déclenche l'UI de validation native
+  -->
+
+  <form novalidate>
+    <label for="username">Nom d'utilisateur</label>
+    <input type="text" 
+               id="username" 
+               name="username" 
+               required 
+               pattern="^[a-zA-Z0-9_]{3,16}$" 
+               title="Entre 3 et 16 caractères (lettres, chiffres et underscore uniquement)">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Mot de passe</label>
+    <input type="password" 
+               id="password" 
+               name="password" 
+               required 
+               pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}" 
+               title="Au moins 8 caractères, incluant une lettre majuscule et un chiffre">
+
+    <label for="birthdate">Date de naissance</label>
+    <input type="date" id="birthdate" name="birthdate" max="2010-10-06" required>
+
+    <label for="country">Pays</label>
+    <input type="text" id="country" name="country" list="countries-list" required>
+    <datalist id="countries-list">
+            <option value="France"></option>
+            <option value="Belgique"></option>
+            <option value="Suisse"></option>
+            <option value="Canada"></option>
+            <option value="Tunisie"></option>
+        </datalist>
+
+    <button type="submit">S'inscrire</button>
+  </form>
+</body>
+</html>

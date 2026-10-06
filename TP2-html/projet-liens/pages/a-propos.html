@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>À propos - Mon Projet</title>
+
+  <!-- (1) feuille de style principale -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header>
+    <img class="logo" src="../assets/images/logo.png" alt="Logo de Mon Projet">
+
+    <button id="toggle-menu" aria-expanded="false" aria-controls="nav-principale">Menu</button>
+    <button id="toggle-theme">Thème sombre</button>
+
+    <nav id="nav-principale">
+      <a href="../index.html">Accueil</a>
+      <a href="pages/contact/contact.html">Contact</a>
+      <a href="../docs/mentions-legales.html">Mentions légales</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>À propos de nous</h1>
+  </section>
+
+  <main>
+    <p>
+      <img class="icon" src="../assets/images/icons/mail.svg" alt="">
+      Vous pouvez nous écrire à tout moment.
+    </p>
+
+    <div class="team">
+      <figure>
+        <img src="../assets/images/team/alice.jpg" alt="Alice, développeuse">
+        <figcaption>Alice</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/images/team/bob.jpg" alt="Bob, designer">
+        <figcaption>Bob</figcaption>
+      </figure>
+    </div>
+
+    <p>
+      <img id="icone-statut" class="icon" src="" alt="">
+      Icône de statut (chargée dynamiquement par JavaScript — voir partie bonus).
+    </p>
+  </main>
+
+  <footer>
+    <p>© 2026 Mon Projet</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

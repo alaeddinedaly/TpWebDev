@@ -1,0 +1,27 @@
+/* dark.css - fichier situé dans assets/css/themes/ (un niveau plus profond que style.css) */
+
+body.dark-mode {
+  background: #121212;
+  color: #eeeeee;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background: #0d47a1;
+}
+
+/*
+  ATTENTION : ce fichier est un niveau plus profond que style.css
+  (assets/css/themes/ au lieu de assets/css/). Le nombre de "../"
+  nécessaire pour atteindre assets/images/ n'est donc pas le même
+  que dans style.css. Le chemin ci-dessous est à corriger.
+*/
+body.dark-mode .badge-mode::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icons/home.svg");
+  background-size: contain;
+  margin-right: 6px;
+}

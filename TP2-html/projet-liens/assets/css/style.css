@@ -1,0 +1,68 @@
+/* style.css - fichier situé dans assets/css/ */
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+header, footer {
+  background: #1565C0;
+  color: white;
+  padding: 16px 24px;
+}
+
+header nav a, footer a {
+  color: white;
+  margin-right: 16px;
+}
+
+.logo {
+  height: 50px;
+}
+
+/*
+  ATTENTION : le chemin dans un url() de CSS est relatif à
+  l'EMPLACEMENT DU FICHIER CSS, pas à la page HTML qui le charge.
+  Ce fichier CSS est dans assets/css/ ; l'image ciblée est dans
+  assets/images/backgrounds/. Le chemin ci-dessous est à corriger.
+*/
+.hero {
+  background-image: url("../images/backgrounds/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.team {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.team figure {
+  margin: 0;
+  text-align: center;
+}
+
+.team img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}

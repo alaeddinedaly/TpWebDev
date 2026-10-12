@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulaire d'authentification</title>
+  </head>
+  <body>
+    <form>
+      <input
+        type="email"
+        placeholder="Email"
+        pattern=".+@epi\.com\.tn"
+        required
+      />
+      <br /><br />
+
+      <input
+        type="password"
+        placeholder="Password"
+        pattern="(?=.*[0-9]).{6,8}"
+        title="6 à 8 caractères avec au moins un chiffre"
+        required
+      />
+      <br /><br />
+
+      <input type="submit" value="Envoyer" />
+    </form>
+  </body>
+</html>

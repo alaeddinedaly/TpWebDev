@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tableau de bord étudiant</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#">Campus+</a>
+      <nav class="navigation" aria-label="Navigation principale">
+        <a href="#">Accueil</a>
+        <a href="#">Mes cours</a>
+        <a href="#">Planning</a>
+        <a href="#">Profil</a>
+      </nav>
+      <a class="profile" href="#">Mon compte</a>
+    </header>
+    <main class="dashboard">
+      <section class="welcome">
+        <p class="eyebrow">ESPACE ÉTUDIANT</p>
+        <h1>Bonjour et bienvenue !</h1>
+        <p>Retrouvez ici vos cours, vos échéances et votre progression.</p>
+      </section>
+      <section class="stats" aria-label="Statistiques">
+        <article class="stat-card">
+          <p>Cours suivis</p>
+          <strong>6</strong><span>Ce semestre</span>
+        </article>
+        <article class="stat-card">
+          <p>Travaux à rendre</p>
+          <strong>3</strong> <span>Cette semaine</span>
+        </article>
+        <article class="stat-card">
+          <p>Progression</p>
+          <strong>72 %</strong> <span>Objectif du semestre</span>
+        </article>
+        <article class="stat-card">
+          <p>Messages</p>
+          <strong>2</strong><span>Non lus</span>
+        </article>
+      </section>
+      <section class="courses">
+        <div class="section-heading">
+          <h2>Mes cours</h2>
+          <a href="#">Voir tous les cours</a>
+        </div>
+        <div class="course-list">
+          <article class="course-card">
+            <span class="course-tag">Développement</span>
+            <h3>Développement web</h3>
+            <p>HTML, CSS et conception d’interfaces.</p>
+            <a href="#">Continuer</a>
+          </article>
+          <article class="course-card">
+            <span class="course-tag">Programmation</span>
+            <h3>Algorithmique</h3>
+            <p>Résolution de problèmes et structures de données.</p>
+            <a href="#">Continuer</a>
+          </article>
+          <article class="course-card">
+            <span class="course-tag">Bases de données</span>
+            <h3>SQL et modélisation</h3>
+            <p>Conception et interrogation d’une base de données.</p>
+            <a href="#">Continuer</a>
+          </article>
+        </div>
+      </section>
+      <aside class="activity">
+        <h2>Activités récentes</h2>
+        <ul>
+          <li><strong>TP CSS</strong><span>À terminer vendredi</span></li>
+          <li><strong>Quiz SQL</strong><span>Note disponible</span></li>
+          <li><strong>Projet web</strong><span>Nouvelle consigne</span></li>
+        </ul>
+      </aside>
+    </main>
+    <footer class="footer"><p>Campus+ — Espace étudiant</p></footer>
+  </body>
+</html>

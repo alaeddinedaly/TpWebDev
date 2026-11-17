@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier DOM — Carte de profil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="conteneur">
+      <h1>Profil</h1>
+      <article id="carte" class="carte">
+        <img class="avatar" src="avatar-placeholder.png" alt="Avatar" />
+        <h2 id="nom">Nom inconnu</h2>
+        <p id="bio">Bio à remplir.</p>
+        <ul id="tags" class="tags"></ul>
+        <p id="compteur" class="compteur"></p>
+      </article>
+      <div id="points" class="points"></div>
+      <div class="actions">
+        <button id="btn-precedent" type="button">← Précédent</button>
+        <button id="btn-suivant" type="button">Suivant →</button>
+        <button id="btn-sombre" type="button">🌙 Mode sombre</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

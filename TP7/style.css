@@ -1,0 +1,102 @@
+:root {
+  --accent: #4f46e5;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f4f8;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+body.dark {
+  background: #1e1e2e;
+  color: #eee;
+}
+body.dark .carte {
+  background: #2a2a3e;
+}
+.conteneur {
+  width: min(440px, 90vw);
+  text-align: center;
+}
+.carte {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  border: 3px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition:
+    border-color 0.3s,
+    transform 0.3s;
+}
+.carte.carte--active {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ddd;
+}
+.tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.tag {
+  background: #eef2ff;
+  color: var(--accent);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+.compteur {
+  font-size: 0.85rem;
+  color: #666;
+}
+.actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.points {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 16px;
+}
+.point {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d1d5db;
+}
+.point.actif {
+  background: var(--accent);
+}
